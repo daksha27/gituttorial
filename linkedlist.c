@@ -13,6 +13,7 @@ Node *tail;
 
 void insert(int);
 int fetch(int);
+void display();
 int main(int argc, char *argv[]) {
 	int choice;
 	int value;
@@ -66,7 +67,14 @@ int fetch(int index)
         if(element.next == Null){
             return -1;
         }
+        //element.nsxt is a pointer to some node.
        element = *(element.next);
     }
     return element.value;
 }
+void display() {
+//code for function goes here.
+printf("hello");
+
+}
+
